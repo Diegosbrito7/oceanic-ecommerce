@@ -1,0 +1,260 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root { 	
+  --azul-marino: #061B3A;
+  --azul-oceano: #0877D1;
+  --turquesa: #11C7D1;
+  --blanco: #FFFFFF; 
+  --celeste-suave: #f0f8ff;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  background-color: var(--celeste-suave); 
+  color: var(--azul-marino);
+}
+
+
+/*      BOOTSTRAP      */
+.slider-container {
+  max-width: 1200px;
+  margin: 30px auto 0 auto;
+  padding: 0 20px;
+  position: relative;
+}
+
+.slider-img {
+  height: 400px;
+  object-fit: cover;
+}
+
+.slider-texto {
+  position: absolute;
+  top: 0;
+  left: 20px;
+  right: 20px;
+  bottom: 0;
+  background-color: rgba(6, 27, 58, 0.6); 
+  border-radius: 1rem; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 5;
+}
+
+.slider-titulo {
+  color: var(--blanco);
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+.slider-boton {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  background-color: var(--azul-oceano);
+  color: var(--blanco);
+  padding: 12px 30px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.slider-boton:hover {
+  background-color: var(--turquesa);
+  color: var(--azul-marino);
+}
+
+/* ===== PUBLICIDAD ===== */
+.publicidad {
+  max-width: 1200px;
+  margin: 20px auto;
+  text-align: center;
+  background-color: var(--blanco);
+  padding: 20px;
+  border: 2px dashed var(--azul-oceano);
+  color: var(--azul-marino);
+}
+
+/* ===== SECCIONES DE PRODUCTOS ===== */
+.seccion {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.seccion-titulo {
+  font-size: 28px;
+  margin-bottom: 25px;
+  border-left: 6px solid var(--turquesa);
+  padding-left: 12px;
+  color: var(--azul-marino);
+}
+
+.contenedor-productos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+/* ===== TARJETAS DE PRODUCTOS ===== */
+.tarjeta {
+  background-color: var(--blanco);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(6, 27, 58, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.tarjeta-imagen {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.tarjeta-info {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.tarjeta-nombre {
+  font-size: 18px;
+  margin-bottom: 8px;
+  color: var(--azul-marino);
+}
+
+.tarjeta-descripcion {
+  font-size: 14px;
+  font-weight: 500; 
+  color: #555;
+  margin-bottom: 12px;
+  flex: 1;
+}
+
+.tarjeta-precio {
+  font-size: 20px;
+  color: var(--turquesa); /* COLOR TURQUESA PARA EL PRECIO */
+  margin-bottom: 15px;
+}
+
+.botones {
+  display: flex;
+  gap: 10px;
+}
+
+.btn-ver {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  flex: 1; 
+  text-align: center;
+  padding: 10px 5px;
+  text-decoration: none;
+  border: 2px solid var(--azul-marino);
+  border-radius: 5px;
+  font-size: 13px;
+  background-color: var(--blanco);
+  color: var(--azul-marino);
+  transition: 0.3s;
+}
+
+.btn-ver:hover {
+  background-color: var(--azul-marino);
+  color: var(--blanco);
+}
+
+.btn-comprar {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  flex: 1;
+  text-align: center;
+  padding: 10px 5px;
+  border: none;
+  border-radius: 5px;
+  font-size: 13px;
+  background-color: var(--azul-oceano); /* COLOR AZUL OCÉANO PARA EL BOTÓN */
+  color: var(--blanco);
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-comprar:hover {
+  background-color: var(--turquesa);
+  color: var(--azul-marino);
+}
+
+
+
+
+
+@media (max-width: 900px) {
+
+  .contenedor-productos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .detalle-container {
+    flex-direction: column;
+    padding: 20px;
+  }
+  .detalle-imagen, .detalle-info {
+    width: 100%;
+  }
+
+  .slider-img {
+    height: 300px;
+  }
+  .slider-titulo {
+    font-size: 30px;
+  }
+}
+
+/* 2. CELULAR (Hasta 600px) */
+@media (max-width: 600px) {
+
+  .contenedor-productos {
+    grid-template-columns: 1fr;
+  }
+
+  .slider-container {
+    padding: 0 10px;
+  }
+  .slider-img {
+    height: 200px; 
+  }
+  .slider-texto {
+    left: 10px;
+    right: 10px;
+  }
+  .slider-titulo {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .slider-boton {
+    font-size: 14px;
+    padding: 8px 20px;
+  }
+
+  .seccion {
+    padding: 30px 15px;
+  }
+  .seccion-titulo {
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+
+  /* Ocultamos la publicidad 2 en celulares */
+  .publicidad-oculta {
+    display: none;
+  }
+}
