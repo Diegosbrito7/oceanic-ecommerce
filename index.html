@@ -1,41 +1,85 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>OCEANIC | Indumentaria y accesorios</title>
-
-    <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Tipografías -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
-
-    <!-- CSS propio -->
-    <link rel="stylesheet" href="css/styles.css">
-</head>
-
-<body>
-
-    <!-- Encabezado: aquí se integrará la navegación -->
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OCEANIC | Indumentaria y Accesorios</title>
+    <!-- BOOTSTRAP -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- TIPOGRAFIAS DE GOOGLE FONTS -->
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    
+    <!-- LOGO: MICHROMA -->
+    <link
+    href="https://fonts.googleapis.com/css2?family=Michroma&display=swap"
+    rel="stylesheet"
+    />
+    
+    <!-- TEXTOS GENERALES: MONTSERRAT -->
+    <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap"
+    rel="stylesheet"
+    />
+    
+    <!-- BOTONES Y COMENTARIOS: POPPINS -->
+    <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap"
+    rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <!-- ENCABEZADO -->
     <header>
+      <nav class="navbar navbar-expand-lg navbar-oceanic">
+        <!-- Barra de navegación -->
+        <!-- LOGO -->
+        <a class="navbar-brand marca" href="index.html">
+          <img src="assets/img/logo1.png" alt="OCEANIC" width="180" />
+        </a>
+        <!-- ENLACES DE NAVEGACIÓN -->
+        <div class="menu-navegacion">
+          <a href="#categorias">Categorías</a>
+          <a href="#productos">Productos</a>
+          <a href="pages/contacto.html">Contacto</a>
+          <a href="pages/nosotros.html">Quiénes somos</a>
+        </div>
+        <!-- BUSCADOR -->
+        <div class="buscador">
+          <input type="text" placeholder="¿Qué estás buscando?" readonly />
+          <span>⌕</span>
+        </div>
+        <!-- ACCESOS DE USUARIO -->
+        <div class="accesos">
+          <a href="pages/login.html">ENTRAR</a>
+          <a href="pages/registro.html">REGISTRATE</a>
+        </div>
+        <!-- CARRITO -->
+        <div class="carrito">
+          <span class="icono-carrito">🛒</span>
+          <span class="total-carrito">$0</span>
+        </div>
+      </nav>
+      <!-- Aquí irá el logo Esto es una prueba -->
+      <!-- <h1 class="logo">OCEANIC</h1>
+      <h2>Indumentaria y accesorios</h2>
+      <p>Explorá nuestra colección.</p>
+      <button>VER PRODUCTOS</button> -->
     </header>
 
-    <!-- Contenido principal: aquí se integrará el catálogo -->
-
+    <!-- CONTENIDO PRINCIPAL -->
     <main>
+      <!-- Aquí irá el contenido de la página -->
     </main>
 
-    <!-- Pie de página -->
-
+    <!-- PIE DE PAGINA -->
     <footer>
+      <!-- Aquí irá la información del footer -->
     </footer>
-
-</body>
+  </body>
 </html>

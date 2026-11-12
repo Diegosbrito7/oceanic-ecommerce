@@ -1,13 +1,13 @@
 /* ESTILOS GENERALES DE OCEANIC */
 
-/* CONFIGURACIÓN GENERAL */
+/* CONFIGURACION GENERAL */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* PALETA DE COLORES Y TIPOGRAFÍAS */
+/* PALETA DE COLORES */
 :root {
     --azul-marino: #061B3A;
     --azul-oceano: #0877D1;
@@ -15,12 +15,14 @@
     --blanco-suave: #f0f8ff;
     --blanco: #FFFFFF;
 
+    /* TIPOGRAFIAS */
     --fuente-logo: 'Michroma', sans-serif;
     --fuente-general: 'Montserrat', sans-serif;
     --fuente-detalles: 'Poppins', sans-serif;
 }
 
-/* CUERPO GENERAL */
+
+
 body {
     background-color: var(--blanco-suave);
     color: var(--azul-marino);
@@ -41,13 +43,13 @@ button,
     font-weight: 500;
 }
 
-/* ENLACES */
+/* COLORES DE ENLACES */
 a {
     color: var(--azul-oceano);
     text-decoration: none;
 }
 
-/* TÍTULOS */
+/* TITULOS */
 h1 {
     font-size: 36px;
     color: var(--azul-marino);
@@ -63,7 +65,7 @@ h3 {
     color: var(--azul-marino);
 }
 
-/* TEXTOS */
+/* TEXTO GENERAL */
 p {
     font-size: 16px;
     line-height: 1.6;
@@ -72,4 +74,148 @@ p {
 /* ACENTOS */
 .acento {
     color: var(--turquesa);
+}
+
+/* MENÚ DE NAVEGACIÓN */
+.menu-navegacion {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.menu-navegacion a {
+    font-size: 12px;
+    white-space: nowrap;
+}
+
+.menu-navegacion a:hover {
+    color: var(--azul-oceano);
+}
+
+/* BUSCADOR */
+.buscador {
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--azul-oceano);
+    border-radius: 8px;
+    padding: 5px 8px;
+    background-color: var(--blanco);
+}
+
+.buscador input {
+    border: none;
+    outline: none;
+    background: transparent;
+    width: 130px;
+    font-size: 12px;
+    font-family: var(--fuente-detalles);
+}
+
+.buscador span {
+    color: var(--azul-oceano);
+    font-size: 22px;
+}
+
+
+/* ACCESOS DE USUARIO */
+.accesos {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.accesos a {
+    color: var(--azul-marino);
+    text-decoration: none;
+    font-family: var(--fuente-detalles);
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.accesos a:hover {
+    color: var(--azul-oceano);
+}
+/* CARRITO */
+.carrito {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: var(--azul-marino);
+    font-family: var(--fuente-detalles);
+    font-weight: 500;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.icono-carrito {
+    font-size: 20px;
+}
+
+.total-carrito {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* NAVBAR PRINCIPAL */
+.navbar-oceanic {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 10px 15px;
+    width: 100%;
+}
+
+.navbar-oceanic .marca {
+    flex-shrink: 0;
+}
+
+.navbar-oceanic .marca img {
+    width: 120px;
+}
+
+.menu-navegacion,
+.accesos,
+.carrito {
+    flex-shrink: 0;
+}
+
+/* ADAPTACIÓN PARA TABLETS */
+@media (max-width: 991px) {
+    .navbar-oceanic {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .menu-navegacion {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+/* ADAPTACIÓN PARA CELULARES */
+@media (max-width: 576px) {
+    .navbar-oceanic {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .menu-navegacion {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .buscador {
+        width: 100%;
+        max-width: 280px;
+    }
+
+    .buscador input {
+        width: 100%;
+    }
+
+    .accesos {
+        justify-content: center;
+    }
 }
