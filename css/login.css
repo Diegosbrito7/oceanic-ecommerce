@@ -1,0 +1,145 @@
+
+/* =================================
+   OCEANIC - INICIO DE SESIÓN
+================================= */
+
+/* ENCABEZADO */
+.login-header {
+    padding: 25px 8%;
+    background-color: var(--azul-marino);
+}
+
+.login-header .logo {
+    color: var(--blanco);
+    font-size: 24px;
+    font-weight: 400;
+}
+
+/* CONTENIDO PRINCIPAL */
+.login-main {
+    min-height: calc(100vh - 150px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+/* TARJETA DE LOGIN */
+.login-card {
+    width: 100%;
+    max-width: 450px;
+    padding: 40px;
+    background-color: var(--blanco);
+    border-radius: 16px;
+    box-shadow: 0 8px 30px rgba(6, 27, 58, 0.12);
+}
+
+/* TÍTULO Y DESCRIPCIÓN */
+.login-card h1 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 12px;
+}
+
+.login-description {
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+/* CAMPOS DEL FORMULARIO */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 22px;
+}
+
+.form-group label {
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 13px 15px;
+    border: 1px solid #ccd6e0;
+    border-radius: 8px;
+    font-family: var(--fuente-general);
+    font-size: 14px;
+    outline: none;
+}
+
+.form-group input:focus {
+    border-color: var(--azul-oceano);
+    box-shadow: 0 0 0 3px rgba(8, 119, 209, 0.12);
+}
+
+/* RECUPERAR CONTRASEÑA */
+.forgot-password {
+    display: block;
+    text-align: right;
+    font-size: 13px;
+    margin-bottom: 25px;
+}
+
+/* BOTÓN DE INICIO */
+.login-button {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--azul-oceano);
+    color: var(--blanco);
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+    background-color: var(--azul-marino);
+}
+
+/* ENLACE DE REGISTRO */
+.register-link {
+    text-align: center;
+    font-size: 13px;
+    font-weight: 400;
+    margin-top: 25px;
+}
+
+.register-link a {
+    font-weight: 700;
+}
+
+/* PIE DE PÁGINA */
+.login-footer {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--azul-marino);
+    color: var(--blanco);
+}
+
+.login-footer p {
+    font-size: 12px;
+    font-weight: 400;
+    margin: 0;
+}
+
+/* DISEÑO RESPONSIVE */
+@media (max-width: 576px) {
+
+    .login-card {
+        padding: 28px 22px;
+    }
+
+    .login-card h1 {
+        font-size: 25px;
+    }
+
+    .login-header {
+        padding: 20px 6%;
+    }
+
+}
