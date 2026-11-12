@@ -1,0 +1,75 @@
+/* ESTILOS GENERALES DE OCEANIC */
+
+/* CONFIGURACIÓN GENERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* PALETA DE COLORES Y TIPOGRAFÍAS */
+:root {
+    --azul-marino: #061B3A;
+    --azul-oceano: #0877D1;
+    --turquesa: #11C7D1;
+    --blanco-suave: #f0f8ff;
+    --blanco: #FFFFFF;
+
+    --fuente-logo: 'Michroma', sans-serif;
+    --fuente-general: 'Montserrat', sans-serif;
+    --fuente-detalles: 'Poppins', sans-serif;
+}
+
+/* CUERPO GENERAL */
+body {
+    background-color: var(--blanco-suave);
+    color: var(--azul-marino);
+    font-family: var(--fuente-general);
+    font-weight: 800;
+}
+
+/* LOGO Y MARCA */
+.logo {
+    font-family: var(--fuente-logo);
+}
+
+/* BOTONES Y COMENTARIOS */
+button,
+.boton,
+.comentario {
+    font-family: var(--fuente-detalles);
+    font-weight: 500;
+}
+
+/* ENLACES */
+a {
+    color: var(--azul-oceano);
+    text-decoration: none;
+}
+
+/* TÍTULOS */
+h1 {
+    font-size: 36px;
+    color: var(--azul-marino);
+}
+
+h2 {
+    font-size: 28px;
+    color: var(--azul-oceano);
+}
+
+h3 {
+    font-size: 22px;
+    color: var(--azul-marino);
+}
+
+/* TEXTOS */
+p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* ACENTOS */
+.acento {
+    color: var(--turquesa);
+}
