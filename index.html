@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Oceanic</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="syltes.css">
+</head>
+<body>
+
+
+  <!--  BOOTSTRAP -->
+  <header class="slider-container">
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+      
+      <!-- Imágenes -->
+      <div class="carousel-inner rounded-4">
+        <div class="carousel-item active">
+          <img src="./imagenes/Promos/promo1.jpg" class="d-block w-100 slider-img" alt="Promo 1">
+        </div>
+        <div class="carousel-item">
+          <img src="./imagenes/Promos/promo2.jpg" class="d-block w-100 slider-img" alt="Promo 2">
+        </div>
+        <div class="carousel-item">
+          <img src="./imagenes/Promos/promo3.jpg" class="d-block w-100 slider-img" alt="Promo 3">
+        </div>
+      </div>
+
+      <!-- Texto fijo sobre el carrusel -->
+      <div class="slider-texto">
+        <h1 class="slider-titulo">¡Ofertas de la Semana!</h1>
+        <a href="#promocionales" class="slider-boton">Ver ofertas</a>
+      </div>
+
+      <!-- Flechitas de control (Bootstrap) -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+      </button>
+      
+    </div>
+  </header>
+
+  <!-- PUBLICIDAD 1 -->
+  <div class="publicidad">
+    <p>¡Publicidad! Suscríbete a nuestro OceanicPass y obtén 10% OFF.</p>
+  </div>
+
+  <!-- SECCIÓN 1: ZAPATILLAS -->
+  <section class="seccion" id="zapatillas">
+    <h2 class="seccion-titulo">Zapatillas</h2>
+    <div class="contenedor-productos">
+      
+      <div class="tarjeta">
+        <img src="./imagenes/zapatillas/zapatilla1.jpg" alt="Zapatilla Urbana" class="tarjeta-imagen">
+        <div class="tarjeta-info">
+          <h3 class="tarjeta-nombre">Zapatillas Urbanas Multicolo</h3>
+          <p class="tarjeta-descripcion">Una combinación de colores y detalles que se destaca en cualquier look.</p>
+          <p class="tarjeta-precio">$45.000</p>
+          <div class="botones">
+            <a href="" class="btn-ver">VER MÁS</a>
+            <a href="" class="btn-comprar">COMPRAR</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="tarjeta">
+        <img src="./imagenes/zapatillas/zapatilla2.jpg" alt="Zapatilla Running" class="tarjeta-imagen">
+        <div class="tarjeta-info">
+          <h3 class="tarjeta-nombre">Zapatillas Deportivas Blanco y Coral </h3>
+          <p class="tarjeta-descripcion">Un diseño deportivo con detalles en coral que aportan un toque de color.</p>
+          <p class="tarjeta-precio">$58.000</p>
+          <div class="botones">
+            <a href="" class="btn-ver">VER MÁS</a>
+            <a href="" class="btn-comprar">COMPRAR</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="tarjeta">
+        <img src="./imagenes/zapatillas/zapatilla3.jpg" alt="Zapatilla Clásica" class="tarjeta-imagen">
+        <div class="tarjeta-info">
+          <h3 class="tarjeta-nombre">Zapatillas Clásicas Blancas</h3>
+          <p class="tarjeta-descripcion">Un estilo simple y versátil para combinar con tus prendas favoritas.</p>
+          <p class="tarjeta-precio">$39.000</p>
+          <div class="botones">
+            <a href="" class="btn-ver">VER MÁS</a>
+            <a href="" class="btn-comprar">COMPRAR</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="tarjeta">
+        <img src="./imagenes/zapatillas/zapatilla4.jpg" alt="Zapatilla Skate" class="tarjeta-imagen">
+        <div class="tarjeta-info">
+          <h3 class="tarjeta-nombre">Zapatillas de Caña Alta Blancas</h3>
+          <p class="tarjeta-descripcion">Una silueta clásica de inspiración urbana para completar tu outfit.</p>
+          <p class="tarjeta-precio">$52.000</p>
+          <div class="botones">
+            <a href="" class="btn-ver">VER MÁS</a>
+            <a href="" class="btn-comprar">COMPRAR</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PUBLICIDAD 2 (Oculta en celulares) -->
+  <div class="publicidad publicidad-oculta">
+    <p>¡Publicidad! Envío gratis en compras mayores a $50.000.</p>
+  </div>
+
+  <!-- SECCIÓN 2: REMERAS -->
+  <section class="seccion" id="remeras">
+    <h2 class="seccion-titulo">Remeras</h2>
+    <div class="contenedor-productos">
+      
+      <div class="tarjeta">
+        <img src="./imagenes/remeras/remera1.jpg" alt="Remera Básica" class="tarjeta-imagen">
+        <div class="tarjeta-info">
+          <h3 class="tarjeta-nombre">Remera Negra con Estampa Anime </h3>
+          <p class="tarjeta-descripcion">Una estampa frontal llena de color para quienes disfrutan del anime.</p>
+          <p class="tarjeta-precio">$12.000</p>
+          <div class="botones">
+            <a href="" class="btn-ver">VER MÁS</a>
+            <a href="" class="btn-comprar">COMPRAR</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="tarjeta">
+        <img src="./imagenes/remeras/remera2.jpg" alt="Remera Estampada" class="tarjeta-imagen">
+        <div class="tarjeta-info">
+          <h3 class="tarjeta-nombre">Remera Básica Blanca </h3>
+          <p class="tarjeta-descripcion">Un básico que nunca falla: simple y fácil de combinar.</p>
+          <p class="tarjeta-precio">$15.000</p>
+          <div class="botones">
+            <a href="" class="btn-ver">VER MÁS</a>
+            <a href="" class="btn-comprar">COMPRAR</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="tarjeta">
+        <img src="./imagenes/remeras/remera3.jpg" alt="Remera Oversize" class="tarjeta-imagen">
+        <div class="tarjeta-info">
+          <h3 class="tarjeta-nombre">Remera Gris con Cuello en V</h3>
+          <p class="tarjeta-descripcion">Diseño discreto en gris, con cuello en V para un look casual.</p>
+          <p class="tarjeta-precio">$18.000</p>
+          <div class="botones">
+            <a href="" class="btn-ver">VER MÁS</a>
+            <a href="" class="btn-comprar">COMPRAR</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="tarjeta">
+        <img src="./imagenes/remeras/remera4.jpg" alt="Remera Manga Larga" class="tarjeta-imagen">
+        <div class="tarjeta-info">
+          <h3 class="tarjeta-nombre">Remera Bordó con Estampa </h3>
+          <p class="tarjeta-descripcion">Un tono bordó con detalle blanco en el pecho que suma personalidad.</p>
+          <p class="tarjeta-precio">$16.500</p>
+          <div class="botones">
+            <a href="" class="btn-ver">VER MÁS</a>
+            <a href="" class="btn-comprar">COMPRAR</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SECCIÓN 3: PRODUCTOS PROMOCIONALES -->
+  <section class="seccion" id="promocionales">
+    <h2 class="seccion-titulo">Productos Promocionales</h2>
+    <div class="contenedor-productos">
+      <div class="tarjeta">
+        <img src="./imagenes/Promos/promo1.jpg" alt="Mochila Urbana" class="tarjeta-imagen">
+        <div class="tarjeta-info">
+          <h3 class="tarjeta-nombre">Pack de Remeras Blanca y Negra</h3>
+          <p class="tarjeta-descripcion">Dos colores esenciales para crear distintas combinaciones todos los días.</p>
+          <p class="tarjeta-precio">$10git config --global user.namegit config --global user.name "Tu Nombre"
+git config --global user.email "tu@email.com"
+.000</p>
+          <div class="botones">
+            <a href="" class="btn-ver">VER MÁS</a>
+            <a href="" class="btn-comprar">COMPRAR</a>
+          </div>
+        </div>
+      </div>
+      
+      
+      
+      <div class="tarjeta">
+        <img src="./imagenes/Promos/promo2.jpg" alt="Botella Térmica" class="tarjeta-imagen">
+        <div class="tarjeta-info">
+          <h3 class="tarjeta-nombre">Selección de Zapatillas Urbanas</h3>
+          <p class="tarjeta-descripcion">Descubrí distintos modelos y elegí el que mejor acompañe tu estilo.</p>
+          <p class="tarjeta-precio">$25.500</p>
+          <div class="botones">
+            <a href="" class="btn-ver">VER MÁS</a>
+            <a href="" class="btn-comprar">COMPRAR</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="tarjeta">
+        <img src="./imagenes/Promos/promo3.jpg" alt="Pack de Medias" class="tarjeta-imagen">
+        <div class="tarjeta-info">
+          <h3 class="tarjeta-nombre">Zapatillas Deportivas Naranja</h3>
+          <p class="tarjeta-descripcion">Un color protagonista con suela en contraste para un look deportivo.</p>
+          <p class="tarjeta-precio">$20.000</p>
+          <div class="botones">
+            <a href="" class="btn-ver">VER MÁS</a>
+            <a href="" class="btn-comprar">COMPRAR</a>
+          </div>
+        </div>
+      </div>
+      <div class="tarjeta">
+        <img src="./imagenes/Promos/promo4.jpg" alt="Gorra Deportiva" class="tarjeta-imagen">
+        <div class="tarjeta-info">
+          <h3 class="tarjeta-nombre">Remeras con Estampas Gráficas</h3>
+          <p class="tarjeta-descripcion">Diseños en blanco y negro con estampas que le dan identidad a tu outfit.</p>
+          <p class="tarjeta-precio">$8.000</p>
+          <div class="botones">
+            <a href="" class="btn-ver">VER MÁS</a>
+            <a href="" class="btn-comprar">COMPRAR</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- BOOTSTRAP JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
